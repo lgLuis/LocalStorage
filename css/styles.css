@@ -16,8 +16,47 @@ html {
 }
 
 :root{
-    --fontPpal:'Quicksand', sans-serif;;
+    --fontPpal:'Quicksand', sans-serif;
+    --primario:cornflowerblue;
+    --secundario: navy;
+
 }
+
+
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: var(--fontPpal);
+    color: var(--primario);
+}
+h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: var(--fontPpal);
+    color:var(--secundario);
+}
+
+.msj{
+    font-size: 2rem;
+    font-family: var(--fontPpal);
+    color: var(--secundario);
+}
+
+input{
+    display: block;
+    font-family: var(--fontPpal);
+    color: var(--secundario);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    text-transform: uppercase;
+    border: 1px solid var(--secundario);
+}
+
 
 .borrar-mensaje{
     float: right;
@@ -38,3 +77,4 @@ html {
     margin: 0 auto;
     color: aliceblue;
 }
+
