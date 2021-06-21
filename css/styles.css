@@ -19,6 +19,15 @@ html {
     --fontPpal:'Quicksand', sans-serif;;
 }
 
+.borrar-mensaje{
+    float: right;
+    cursor: pointer;
+    color: red;
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
 .error{
     background-color: red;
     text-align: center;
