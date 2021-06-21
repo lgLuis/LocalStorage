@@ -12,8 +12,6 @@ function eventListeners(){
 }
 
 
-
-
 //FUNCIONES
 function agregarMensaje(e){
     e.preventDefault();
@@ -25,6 +23,19 @@ function agregarMensaje(e){
         mostrarError("El mensaje: No puede ir vacio")
         return; //Evita que se sigan ejecutando más líneas de cód.
     }
+
+    const mensajeObj={
+        id: Date.now(),
+        // texto: mens
+        // mens: mens
+        mens
+    }
+
+    //Agregar los mensajes al Arreglo
+    mensajes =[...mensajes, mensajeObj];
+    //Creamos el html
+    crearHTML();
+
 }
 
 //Mostrar mensaje de error
@@ -42,5 +53,26 @@ function mostrarError(error){
     setTimeout(() => {
         mensajeError.remove();
     }, 4000);
+}
 
+//Muestra un lista de los mensajes.
+function crearHTML(){
+    limpiarHTML();
+    if(mensajes.length>0){
+        mensajes.forEach(mens=>{
+            //Crear el HTML
+            const li=document.createElement("li");
+            //Agredo el texto
+            li.innerText = mens.mens;
+            //Insertando en el HTML
+            listaMensajes.appendChild(li);
+        });
+    }
+}
+
+//Limpiar el HTML
+function limpiarHTML(){
+    while(listaMensajes.firstChild){
+        listaMensajes.removeChild(listaMensajes.firstChild);
+    }
 }
