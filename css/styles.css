@@ -18,3 +18,14 @@ html {
 :root{
     --fontPpal:'Quicksand', sans-serif;;
 }
+
+.error{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 40rem;
+    margin: 0 auto;
+    color: aliceblue;
+}

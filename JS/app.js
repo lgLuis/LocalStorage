@@ -33,6 +33,7 @@ function mostrarError(error){
     const mensajeError = document.createElement("p");
     mensajeError.textContent=error;
     mensajeError.classList.add("error");
+
     //Insertarlo en el contenido
     const contenido=document.querySelector("#contenido");
     contenido.appendChild(mensajeError);
@@ -40,6 +41,6 @@ function mostrarError(error){
     //Eliminar mensaje error luego de  3 segundos
     setTimeout(() => {
         mensajeError.remove();
-    }, 3000);
+    }, 4000);
 
 }
